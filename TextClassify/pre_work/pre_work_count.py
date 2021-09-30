@@ -39,7 +39,9 @@ if __name__ == "__main__":
 
             x[i, j]=total / 10
             i += 1
-        print(i)
-
+        #print(i)
+    print("(x,0)",np.size(x,0),"(x,1)",np.size(x,1))
     np.save(r'../data/x.npy', x)
+    np.savetxt('../data/x.txt',x,fmt='%s',newline='\n')
     np.save(r'../data/y.npy', y)
+    np.savetxt('../data/y.txt',y,fmt='%s',newline='\n')
