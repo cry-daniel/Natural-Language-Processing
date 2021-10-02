@@ -1,7 +1,29 @@
 import numpy as np
+import sys
+import os
 from scipy import sparse
 from tqdm import tqdm
+import config
 
+#sys.path.append('.')
+
+dataPath=config.dataPath
+print(dataPath)
+input()
+for root, dirs, files in os.walk(dataPath):
+    print(root)
+    print(dirs)
+    print(files)
+    input()
+    for file in tqdm(files):
+        print(root)
+        print(file)
+        filePath=os.path.join(root, file)
+        print(filePath)
+        input()
+exit()
+
+import utils,config
 test=[[1,3,4,2],
 [2,1,4,3],
 [3,2,4,4],
