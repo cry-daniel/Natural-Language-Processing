@@ -1,1 +1,0 @@
-g++ knn.cpp -o knn -mcmodel=medium

@@ -1,6 +1,21 @@
 import numpy as np
 from scipy import sparse
 from tqdm import tqdm
+
+test=[[1,3,4,2],
+[2,1,4,3],
+[3,2,4,4],
+[4,1,1,2]]
+
+print(test[0][2])
+
+te=test
+
+test=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+
+print(te)
+
+exit()
 '''
 len=4
 
