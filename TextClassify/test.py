@@ -7,6 +7,15 @@ import config
 
 #sys.path.append('.')
 
+x=np.load('./data/x_.npy')
+
+a=np.zeros([2,18966])
+print(a)
+#a=np.row_stack((a,x[1]))
+a[1]=a[1]+x[1]
+print(type(sum(a[1]==x[1])))
+print(a)
+exit()
 dataPath=config.dataPath
 print(dataPath)
 input()

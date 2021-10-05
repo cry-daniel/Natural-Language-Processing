@@ -55,7 +55,7 @@ if __name__ == "__main__":
         print(i)
     print(y)
     print(x[1])
-    np.savetxt(r'../data/x1.txt',x[1],fmt='%s',newline='\n')
+    np.savetxt(r'../data/x.txt',x,fmt='%s',newline='\n')
     print("(x,0)",np.size(x,0),"(x,1)",np.size(x,1))
     np.save(r'../data/x_.npy', x)
     #np.savetxt('../data/x.txt',x,fmt='%s',newline='\n')
